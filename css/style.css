@@ -1,0 +1,307 @@
+:root{
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Public Sans', sans-serif;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inner{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0px 90px;
+}
+.header{
+    width: 100%;
+}
+.header-section{
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color:var(--White);
+    position: relative;
+    z-index: 1;
+}
+nav{
+    flex-basis: 45%;
+}
+a{
+    text-decoration: none;
+}
+nav ul{
+    justify-content: space-between;
+    list-style-type: none;
+}
+ul li a{
+    color: var(--Grayish-Blue);
+    font-weight: 300;
+}
+ul li a:hover{
+    color: var(--Lime-Green);
+}
+.btn{
+    color: var(--White);
+    display: inline-block;
+    background: linear-gradient(to right, var(--Lime-Green),var(--Bright-Cyan));
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 300;
+    transition: all 250ms 0s ease-in-out;
+}
+.btn:hover{
+    opacity: .75;
+}
+.hero{
+    background-color: var(--Very-Light-Gray);
+}
+.hero-section{
+    justify-content: space-between;
+    padding-right: 0px;
+    overflow-x: hidden;
+}
+.left{
+    flex-basis: 35%;
+    margin-top: 180px;
+}
+.left h1,.text h1{
+    color: var(--Dark-Blue);
+    font-size: 2rem;
+    font-weight: 300;
+}
+.left p,.text p{
+    color: var(--Grayish-Blue);
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 15px 0px;
+}
+.right{
+    flex-basis:60%;
+    background-image: url(../img/bg-intro-desktop.svg);
+    background-position-y: -250px;
+    background-position-x: -70px;
+    background-repeat: no-repeat;
+}
+.right img{
+    width: 100%;
+    margin-top: -110px;
+    margin-left: 130px;
+}
+
+.Easybank{
+    background-color: var(--Light-Grayish-Blue);
+    padding: 100px 0px;
+    margin-top: -130px;
+}
+.text h1{
+    font-size: 1.5rem;
+}
+.four-box{
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.box{
+    flex-basis: 24%;
+    padding-right: 20px;
+}
+.padding{
+    padding-right: 0;
+}
+.box h1{
+    font-size: 1.5rem;
+    color: var(--Dark-Blue);
+    font-weight: 300;
+    margin: 15px 0px;
+}
+.box p{
+    color: var(--Grayish-Blue);
+    line-height: 1.5rem;
+}
+.articles{
+    background-color: var(--Very-Light-Gray);
+    padding: 100px 0px;
+}
+.image-box{
+    flex-basis: 22%;
+    background-color: var(--White);
+}
+.image-box img{
+    width: 100%;
+    border-radius: 4px;
+}
+.image-text{
+    padding: 20px;
+}
+.image-text h6{
+    color: var(--Grayish-Blue);
+    font-weight: 300;
+}
+.image-box h2{
+    font-size: 1.2rem;
+    color: var(--Dark-Blue);
+    font-weight: 300;
+    margin: 15px 0px;
+}
+.image-box p{
+    color: var(--Grayish-Blue);
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+@media only screen and (max-width:1024px){
+    ul li a,.btn{
+        font-size: .7rem;
+    }
+
+    .right{
+        background-position-y: -266px;
+        background-position-x: -70px;
+    }
+    .right img{
+        margin-top: -91px;
+        margin-left: 91px;
+    }
+    .left{
+        margin-top: 100px;
+    }
+    .left h1,.text h1{
+        font-size: 1.5rem;
+    }
+    .left p{
+        font-size: .9rem;
+    }
+    .box h1,.image-text h2{
+        font-size: 1.1rem;
+    }
+    .box p,.image-text p{
+        font-size: .7rem;
+    }
+}
+footer{
+    background-color: var(--Dark-Blue);
+    padding: 50px 0px;
+    text-align: center;
+}
+footer span{
+    margin: 5px;
+    cursor: pointer;
+}
+footer p{
+    color: var(--Lime-Green);
+    margin-top: 20px;
+    font-weight: 300;
+}
+footer p span{
+    font-weight: 700;
+}
+
+@media only screen and (max-width:900px){
+    .inner{
+        padding: 0px 30px;
+    }
+    .left{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        order: 2;
+        margin-top: 0px;
+    }
+    .Easybank{
+        margin-top: 0px;
+    }
+    .right{
+        flex-basis:100%;
+        background-position: center;
+        background-image: url(../img/bg-intro-mobile.svg);
+        background-size: cover;
+        order: 1;
+        text-align: center;
+    }
+    .right img{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    .box{
+       flex-basis: 50%;
+       margin-bottom: 30px;
+    }
+    .four-box{
+        padding: 30px;
+    }
+    .image-box{
+        flex-basis: 50%;
+        padding: 0px 20px;
+        margin-bottom: 30px;
+        background-color: none;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .box{
+       flex-basis: 100%;
+       text-align: center;
+       padding-right: 0;
+    }
+    .image-box{
+        flex-basis: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+}
+@media only screen and (max-width:768px){
+    .header-section{
+        width: 100%;
+        max-width: 0;
+        justify-content: center;
+        padding: 0;
+    }
+    .btn{
+        display: none;
+    }
+    nav{
+        position: relative;
+        top: 50px;
+        background-color: var(--White);
+        border-radius: 5px;
+        display: none;
+    }
+    nav ul{
+        width: 300px;
+        text-align: center;
+    }
+    nav ul li {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+@media only screen and (max-width:364px){
+    nav ul{
+          width: 250px; 
+    }
+}
+@media only screen and (max-width:359px){
+    nav ul{
+          width: 200px; 
+    }
+    footer p{
+        font-size: .9rem;
+    }
+}
+
+
+
+
