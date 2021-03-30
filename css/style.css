@@ -268,7 +268,7 @@ footer p span{
         justify-content: center;
         padding: 0;
     }
-    .btn{
+    .header .btn{
         display: none;
     }
     nav{
