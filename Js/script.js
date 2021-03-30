@@ -1,5 +1,5 @@
 $(document).ready(function(){
     $(".logo").click(function(){
-          $("nav").slideToggle(500);
+          $("nav").slideToggle(250);
     });
 });
