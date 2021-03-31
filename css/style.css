@@ -278,16 +278,17 @@ footer p span{
 @media only screen and (max-width:768px){
     .header-section{
         padding-top: 10px;
+        position: relative;
     }
     .header-section .btn{
         display: none;
     }
     .navigation{
-        width: 100%;
-        float: none;  
+        display: none;
+        width: 100%;  
         margin-left: 0px; 
         justify-content: center;
-        position: relative;
+        position:absolute;
         z-index: 1122;
         text-align: center;
         top: 30px;
